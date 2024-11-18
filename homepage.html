@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lapola - Jasa Cetak Foto Polaroid</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loading-screen">
+      <div class="spinner">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <p>Loading...</p>
+    </div>
+    <div id="main-content">
+      <header>
+        <h1>Selamat Datang di Lapola</h1>
+      </header>
+      <main>
+        <section id="konfirmasi-foto">
+          <h2>Konfirmasi Foto</h2>
+          <input type="file" id="foto-input" />
+          <img id="foto-preview" src="" alt="Preview Foto" />
+        </section>
+        <section id="filter">
+          <h2>Filter</h2>
+          <select id="filter-select">
+            <option value="none">None</option>
+            <option value="monochrome">Monochrome</option>
+            <option value="sepia">Sepia</option>
+            <option value="auto">Auto</option>
+          </select>
+        </section>
+        <section id="jumlah-pesanan">
+          <h2>Jumlah Pesanan</h2>
+          <input type="number" id="jumlah-input" min="1" value="1" />
+        </section>
+        <section id="total-harga">
+          <h2>Total Harga</h2>
+          <p id="harga-total">Rp 0</p>
+        </section>
+        <!-- Tambahkan tombol pesan dan kembali ke landing page -->
+        <section id="actions">
+          <a href="https://wa.me/+6281275543340" class="button"
+            >ScreenShoot Dan Pesan Sekarang</a
+          >
+          <a id="back-to-landing" class="button">Kembali Ke Menu Utama</a>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
